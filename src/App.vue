@@ -10,10 +10,18 @@
           <span>{{ current.artist }}</span>
         </h2>
         <div class="controls">
-          <button class="prev" @click="prev">Prev</button>
-          <button class="play" v-if="!isPlaying" @click="play">Play</button>
-          <button class="pause" v-else @click="pause">Pause</button>
-          <button class="next" @click="next">Next</button>
+          <button class="prev" @click="prev">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button class="play" v-if="!isPlaying" @click="play">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="pause" v-else @click="pause">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button class="next" @click="next">
+            <i class="fas fa-forward"></i>
+          </button>
         </div>
       </section>
       <section class="playlist">
